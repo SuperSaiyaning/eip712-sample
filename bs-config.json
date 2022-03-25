@@ -1,0 +1,10 @@
+{
+	"server": {
+		"baseDir": [
+			"./frontend"
+		],
+		"routes": {
+			"/vendor": "./node_modules"
+		}
+	}
+}
