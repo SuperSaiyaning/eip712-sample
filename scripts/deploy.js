@@ -14,8 +14,8 @@ async function main() {
 	// await hre.run('compile');
 
 	// We get the contract to deploy
-	const Greeter = await hre.ethers.getContractFactory("EIP712Sample");
-	const greeter = await Greeter.deploy("EIP712Sample");
+	const Greeter = await hre.ethers.getContractFactory("NormalMessage");
+	const greeter = await Greeter.deploy();
 
 	await greeter.deployed();
 

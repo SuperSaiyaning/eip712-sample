@@ -1,4 +1,5 @@
 /* eslint-disable no-undef */
+// TypedMessage 验证，签名信息由metamask生成
 App = {
 	loading: false,
 	contracts: {},
@@ -113,7 +114,7 @@ App = {
 		console.log(domainData);
 
 		const message = {
-			nonce: 0,
+			nonce: 2,
 			from: App.account,
 			functionSignature,
 		};
@@ -151,7 +152,7 @@ App = {
 				const v = parseInt(signature.substring(128, 130), 16);
 				console.log(r);
 				console.log(s);
-				console.log(v);
+				console.log(web3.utils.numberToHex(v));
 
 				const abi = [
 					{
