@@ -86,7 +86,7 @@ App = {
 
 	createTask: async () => {
 		// 签署字符串message
-		const message = '0x654d473236755342783731646e363645784c775464564b637256765a79593939'
+		const message = '0x4b5057364732425442615763643447694e30644c35596c415955424d3144534c'
 		const from = App.account;
 		const params = [message,from]
 		const method = 'personal_sign'
